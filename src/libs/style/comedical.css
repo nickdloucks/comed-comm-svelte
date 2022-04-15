@@ -1,0 +1,16 @@
+:root{
+    --nick-lt-blue: #00bfff;
+}
+
+.comedical-logo-header {
+    height: 200px;
+    width: 450px;
+}
+html {
+    color: #000000;
+    background-color: var(--nick-lt-blue);
+}
+
+select {
+    width: 200px;
+}

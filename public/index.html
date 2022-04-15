@@ -4,15 +4,60 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
 
-	<title>Svelte app</title>
+	<title>Comedical Commissions</title>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
+	
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
+
+	<link rel="icon" type="image/jpg" href="./views/images/comedical-icon.jpg">
+    <link rel="stylesheet" href="./src/libs/style/nick-style-lib.css">
+    <link rel="stylesheet" href="./src/libs/style/nick-dark-mode.css">
+    <link rel="stylesheet" href="../src/libs/style/comedical.css">
 
 	<script defer src='/build/bundle.js'></script>
 </head>
 
 <body>
+	<img src="/views/images/comedical-logo-new.jpg" class="comedical-logo-header">
+    <!-- <a href="./views/admin-login.html">Administrator Panel</a> -->
+    <a class="neutral-button" style="display: block; width: 400px" href="./views/admin-dash.html">Administrator Panel</a>
+    <!-- *************** move inline styling to css when you refactor the link  -->
+    <header><h1>CoMedical Commissions Statement Generator</h1></header><!-- *************** move inline styling to css when you refactor the link  -->
+    <main>
+        <form class="grid-container" style="margin:30px">
+            <h3>Please upload Sales Tracings for specified sales rep:</h3>
+            <span id="rep-select-component">
+                <label for="sales-rep">Sales Rep.&nbsp;</label>
+                <select class="select-box" name="sales-rep" id="rep-select">
+                    <option value="chris-burbiglia">Chris Burbiglia</option>
+                    <option value="erin-collins">Erin Collins</option>
+                    <option value="michael-coyne">Michael Coyne</option>                       
+                    <option value="molly-dennehey">Molly Dennehey</option>
+                    <option value="marti-dowdy">Marti Dowdy</option>
+                    <option value="nick-hagarty">Nick Hagarty</option>
+                    <option value="ryan-murray">Ryan Murray</option>
+                    <option value="griff-overturf">Griff Overturf</option>
+                    <option value="haydon-overturf">Haydon Overturf</option>
+                    <option value="mike-parker">Mike Parker</option>
+
+                    <option value="house-account" selected>House Account</option> <!--default value-->
+                </select>
+            </span>
+            <span id="otd-upload-component">
+                <label for="OTD-tracings">Out the Door Tracings:&nbsp;</label>
+                <input type="file" name="OTD-tracings" id="otd-upload">
+            </span>
+            <span id="dir-upload-component">
+                <label for="DIR-tracings">Direct Tracings:&nbsp;</label>
+                <input type="file" name="DIR-tracings" id="dir-upload">
+            </span>
+            <!-- <input type="checkbox" name="dark-mode" id="dark-mode" value="true" checked="true"><label for="dark-mode">Dark Mode</label> -->
+        </form>
+        <a class="good-button" style="margin:40px" href="./fs_db/statements/region-20_2022-04.html">Generate Statement</a>
+            <!-- *************** move inline styling to css when you refactor the link  -->
+            <!-- <div id="statement-output"></div> -->
+
+    </main>
 </body>
 </html>
