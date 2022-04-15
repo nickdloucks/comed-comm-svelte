@@ -1,0 +1,235 @@
+{
+    "sales-reps": {
+        "chris-burbiglia": {
+            "rep_name": "Chris Birbiglia",
+            "territories": ["1003"],
+            "sales_team": ["SAT"],
+            "otd_pct": 0.20,
+            "dir_pcts": {
+                "GEN": 0.20,
+                "MA": 0.20,
+                "MET": 0.20,
+                "PMBS": 0.20,
+                "SCI": 0.20,
+                "SKY": 0.20,
+                "SPC": 0.20,
+                "WEG": 0.20
+            },
+            "base_salary": 96000,
+            "monthly_draw": 11500
+        },
+        "erin-collins": {
+            "rep_name": "Erin Collins",
+            "territories": ["1014"],
+            "sales_team": ["SAT", "IIT"],
+            "otd_pct": 0.50,
+            "dir_pcts": {
+                "ARG": 0.50,
+                "CON": 0.50,
+                "GEN": 0.50,
+                "INT": 0.50,
+                "MA": 0.50,
+                "MED": 0.50,
+                "MET": 0.50,
+                "MRT": 0.50,
+                "NOZ": 0.50,
+                "PMBS": 0.50,
+                "SCI": 0.50,
+                "SKY": 0.20,
+                "SPC": 0.50,
+                "TID": 0.50,
+                "UMA": 0.50,
+                "WEG": 0.50
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "michael-coyne": {
+            "rep_name": "Michael Coyne",
+            "territories": ["1010"],
+            "sales_team": ["SAT"],
+            "otd_pct": 0.20,
+            "dir_pcts": {
+                "GEN": 0.20,
+                "MA": 0.20,
+                "MET": 0.20,
+                "PMBS": 0.20,
+                "SCI": 0.20,
+                "SKY": 0.20,
+                "SPC": 0.20,
+                "WEG": 0.20
+            },
+            "base_salary": 80040,
+            "monthly_draw": 0
+        },                       
+        "molly-dennehey": {
+            "rep_name": "Molly Dennehey",
+            "territories": ["1007", "1008"],
+            "sales_team": ["IIT"],
+            "otd_pct": {
+                "30% +": 0.40,
+                "25-29.99%": 0.35,
+                "20-24.99%": 0.30,
+                "< 20%": "GP OF SALE"
+            },
+            "dir_pcts": {
+                "ARG": 0.40,
+                "AXI": 0.40,
+                "CON": 0.40,
+                "INT": 0.40,
+                "MED": 0.40,
+                "MRT": 0.40,
+                "NOZ": 0.40,
+                "TID": 0.40,
+                "WIT": 0.40
+            },
+           "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "marti-dowdy": {
+            "rep_name": "Marti Dowdy",
+            "territories": ["1004"],
+            "sales_team": ["IIT"],
+            "otd_pct": {
+                "30% +": 0.40,
+                "25-29.99%": 0.35,
+                "20-24.99%": 0.30,
+                "< 20%": "GP OF SALE"
+            },
+            "dir_pcts": {
+                "ARG": 0.40,
+                "AXI": 0.40,
+                "CON": 0.40,
+                "INT": 0.40,
+                "MED": 0.40,
+                "MRT": 0.40,
+                "NOZ": 0.40,
+                "TID": 0.40,
+                "WIT": 0.40
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "nick-hagarty": {
+            "rep_name": "Nick Hagarty",
+            "territories": ["1012", "1013"],
+            "sales_team": ["IIT"],
+            "otd_pct": {
+                "30% +": 0.40,
+                "25-29.99%": 0.35,
+                "20-24.99%": 0.30,
+                "< 20%": "GP OF SALE"
+            },
+            "dir_pcts": {
+                "ARG": 0.40,
+                "AXI": 0.40,
+                "CON": 0.40,
+                "INT": 0.40,
+                "MED": 0.40,
+                "MRT": 0.40,
+                "NOZ": 0.40,
+                "TID": 0.40,
+                "WIT": 0.40
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "ryan-murray": {
+            "rep_name": "Ryan Murray",
+            "territories": ["1009"],
+            "sales_team": ["IIT"],
+            "otd_pct": {
+                "30% +": 0.40,
+                "25-29.99%": 0.35,
+                "20-24.99%": 0.30,
+                "< 20%": "GP OF SALE"
+            },
+            "dir_pcts": {
+                "ARG": 0.40,
+                "AXI": 0.40,
+                "CON": 0.40,
+                "INT": 0.40,
+                "MED": 0.40,
+                "MRT": 0.40,
+                "NOZ": 0.40,
+                "TID": 0.40,
+                "WIT": 0.40
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "griff-overturf": {
+            "rep_name": "Griff Overturf",
+            "territories": ["1005"],
+            "sales_team": ["SAT"],
+            "otd_pct": 0.20,
+            "dir_pcts": {
+                "GEN": 0.20,
+                "MA": 0.20,
+                "MET": 0.20,
+                "PMBS": 0.20,
+                "SCI": 0.20,
+                "SKY": 0.20,
+                "SPC": 0.20,
+                "WEG": 0.20
+            },
+            "base_salary": 84000,
+            "monthly_draw": 0
+        },
+        "haydon-overturf": {
+            "rep_name": "Haydon Overturf",
+            "territories": ["1002"],
+            "sales_team": ["SAT"],
+            "otd_pct": 0.20,
+            "dir_pcts": {
+                "GEN": 0.20,
+                "MA": 0.20,
+                "MET": 0.20,
+                "PMBS": 0.20,
+                "SCI": 0.20,
+                "SKY": 0.20,
+                "SPC": 0.20,
+                "WEG": 0.20
+            },
+            "base_salary": 84000,
+            "monthly_draw": 0
+        },
+        "mike-parker": {
+            "rep_name": "Mike Parker",
+            "territories": ["1015"],
+            "sales_team": ["IIT"],
+            "otd_pct": 0.50,
+            "dir_pcts": {
+                "CON": 0.70
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        },
+        "house-account": {
+            "rep_name": "Region 20",
+            "territories": ["1020"],
+            "sales_team": ["SAT", "IIT"],
+            "otd_pct": 1.00,
+            "dir_pcts": {
+                "ARG": 1.00,
+                "CON": 1.00,
+                "GEN": 1.00,
+                "INT": 1.00,
+                "MA": 1.00,
+                "MED": 1.00,
+                "MET": 1.00,
+                "MRT": 1.00,
+                "NOZ": 1.00,
+                "PMBS": 1.00,
+                "SCI": 1.00,
+                "SKY": 1.00,
+                "SPC": 1.00,
+                "TID": 1.00,
+                "UMA": 1.00,
+                "WEG": 1.00
+            },
+            "base_salary": 0,
+            "monthly_draw": 0
+        }
+    }
+}
