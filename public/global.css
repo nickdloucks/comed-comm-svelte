@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	color: #333;
+	color: #000000;
 	margin: 0;
 	padding: 8px;
 	box-sizing: border-box;
@@ -25,9 +25,9 @@ a:visited {
 	color: rgb(0,80,160);
 }
 
-label {
+/* label {
 	display: block;
-}
+} */
 
 input, button, select, textarea {
 	font-family: inherit;
@@ -37,7 +37,7 @@ input, button, select, textarea {
 	margin: 0 0 0.5em 0;
 	box-sizing: border-box;
 	border: 1px solid #ccc;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 input:disabled {
