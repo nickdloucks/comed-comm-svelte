@@ -1,17 +1,17 @@
 <script lang="ts">
-  import { repStore } from "./store";
-  import { RepSelect } from './components/rep-select.svelte';
+//   import { repStore } from "./store";
+  import RepSelect from './components/rep-select.svelte';
   let edit: boolean = false;
 
-	const RepSelectBox = new RepSelect({
-		target: document.getElementById('rep-select-component'),
-		props: {
-			name: 'world'
-		}
+	export const RepSelectBox = new RepSelect({
+		target: document.getElementById('rep-select-component') as Element,
+		// props: {
+		// 	name: 'rep-select-svelte-component'
+		// }
 	});
 
 </script>
-
+<!-- 
 <main>
   {#if edit}
     <label for="name">Name:</label>
@@ -25,7 +25,7 @@
     territories: {$repStore.territories}<br />
     Admin: {$repStore.admin ? "Yes" : "No"}
   {/if}
-</main>
+</main> -->
 
 <button on:click={() => (edit = !edit)}>
   {edit ? "Close" : "Edit"}
