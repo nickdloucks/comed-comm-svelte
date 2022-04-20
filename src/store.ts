@@ -16,16 +16,16 @@ let allReps;
 // export let focusRepName: string = 'house-account'; // default info for focus sales rep. changes to name of rep when selecting a different rep
 
 
-export const repData = fetch('../../fs_db/commission_configs/sales-reps.json') // call this fetch function when logging back into admin portal??
+export const repData = fetch('../fs_db/commission_configs/sales-reps.json') // call this fetch function when logging back into admin portal??
   .then(response =>{ // get the JSON file storing all the profile data for each sales rep
-    return response.json(); // return as a JSON object
+    return response.json(); // return a Javascript object from the JSON data
   }).then(data =>{
     allReps = data["sales_reps"];
     console.log(repData);
     console.log(allReps["erin-collins"]);
 });
 
-export let repStore = writable<Array<SalesRep>>();
+// export let repStore = writable<Array<SalesRep>>();
 
 
 
