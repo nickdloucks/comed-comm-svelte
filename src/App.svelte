@@ -1,4 +1,5 @@
 <script lang="ts">
+
   import { repStore } from "./store";
   import RepSelect from './components/rep-select.svelte';
   let edit: boolean = false;
@@ -8,12 +9,14 @@
 	// 	props: {
 	// 		name: 'world'
 	// 	}
+
 	// });
 
 </script>
 
 <main>
 	<svelte:component this={RepSelect}/>
+
   <!-- {#if edit}
     <label for="name">Name:</label>
     <input id="name" type="text" bind:value={$repStore.name} /><br />
