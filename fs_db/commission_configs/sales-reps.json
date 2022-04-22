@@ -80,7 +80,7 @@
                 "MRT": 0.40,
                 "NOZ": 0.40,
                 "TID": 0.40,
-                "WIT": 0.40
+                "RAD": 0.40
             },
            "base_salary": 0,
             "monthly_draw": 0
@@ -103,7 +103,7 @@
                 "MRT": 0.40,
                 "NOZ": 0.40,
                 "TID": 0.40,
-                "WIT": 0.40
+                "RAD": 0.40
             },
             "base_salary": 0,
             "monthly_draw": 0
@@ -126,7 +126,7 @@
                 "MRT": 0.40,
                 "NOZ": 0.40,
                 "TID": 0.40,
-                "WIT": 0.40
+                "RAD": 0.40
             },
             "base_salary": 0,
             "monthly_draw": 0
@@ -149,7 +149,7 @@
                 "MRT": 0.40,
                 "NOZ": 0.40,
                 "TID": 0.40,
-                "WIT": 0.40
+                "RAD": 0.40
             },
             "base_salary": 0,
             "monthly_draw": 0
@@ -216,6 +216,7 @@
                 "MRT": 1.00,
                 "NOZ": 1.00,
                 "PMBS": 1.00,
+                "RAD": 1.00,
                 "SCI": 1.00,
                 "SKY": 1.00,
                 "SPC": 1.00,
