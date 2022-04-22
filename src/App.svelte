@@ -1,6 +1,7 @@
 <script lang="ts">
 //   import { repStore } from "./store";
   import RepSelect from './components/rep-select.svelte';
+  import RepConfig from './components/re-configUI.svelte';
   let edit: boolean = false;
 
 	// export const RepSelectBox = new RepSelect({
@@ -14,7 +15,7 @@
 
 <main>
 	<svelte:component this={RepSelect}/>
-
+	<svelte:component this={RepConfig}/>
   <!-- {#if edit}
     <label for="name">Name:</label>
     <input id="name" type="text" bind:value={$repStore.name} /><br />
