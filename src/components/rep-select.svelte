@@ -17,16 +17,16 @@
     // let configFilePath = '../fs_db/commission_configs/'.concat(configFile);
     // // console.log(configFilePath);
 
-    // fetch(configFilePath)
-    //     .then(response =>{
-    //         return response.json();
-    //     })
-    //     .then(data =>{
-    //         currentRepParams = data;
-    //         console.log(data);
-    //         console.log(currentRepParams.rep_name);
-    //     });
-    // });
+    // // fetch(configFilePath)
+    // //     .then(response =>{
+    // //         return response.json();
+    // //     })
+    // //     .then(data =>{
+    // //         currentRepParams = data;
+    // //         console.log(data);
+    // //         console.log(currentRepParams.rep_name);
+    // //     });
+    // // });
 
 </script>
 

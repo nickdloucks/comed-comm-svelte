@@ -105,6 +105,6 @@
   "ts-node":{
     "esm": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "server.js"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*", "./dist","./build", "spec"]
 }

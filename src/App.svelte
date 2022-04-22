@@ -1,14 +1,16 @@
 <script lang="ts">
-//   import { repStore } from "./store";
+
+  import { repStore } from "./store";
   import RepSelect from './components/rep-select.svelte';
   import RepConfig from './components/rep-configUI.svelte';
   let edit: boolean = false;
 
-	// export const RepSelectBox = new RepSelect({
-	// 	target: document.getElementById('rep-select-component') as Element,
-	// 	// props: {
-	// 	// 	name: 'rep-select-svelte-component'
-	// 	// }
+	// const RepSelectBox = new RepSelect({
+	// 	target: document.getElementById('rep-select-component'),
+	// 	props: {
+	// 		name: 'world'
+	// 	}
+
 	// });
 
 </script>
