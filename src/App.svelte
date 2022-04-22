@@ -1,7 +1,7 @@
 <script lang="ts">
 //   import { repStore } from "./store";
   import RepSelect from './components/rep-select.svelte';
-  import RepConfig from './components/re-configUI.svelte';
+  import RepConfig from './components/rep-configUI.svelte';
   let edit: boolean = false;
 
 	// export const RepSelectBox = new RepSelect({
