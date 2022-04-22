@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
     let repPaths =[];
     // fetch('../../fs_db/commission_configs/sales-reps.json')
     //     .then(response =>{
@@ -27,6 +27,7 @@
     // //         console.log(currentRepParams.rep_name);
     // //     });
     // // });
+
 </script>
 
 <main>
