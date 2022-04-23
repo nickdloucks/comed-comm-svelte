@@ -1,5 +1,5 @@
 <script lang='ts'>
-    import { currentRep, SalesRep } from '../stores/rep-store';
+    import { currentRep } from '../stores/rep-store';
 
 </script>
 
