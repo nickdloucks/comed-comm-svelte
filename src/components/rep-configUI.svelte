@@ -15,7 +15,13 @@
     {#each $currentRep.territories as territory}
         <input class='territory-config' type="text" placeholder={territory} value={territory}/><br>
     {/each}
-    <label for='salary'>OTD %</label><input name="salary" type='number' placeholder={'$'.concat(String($currentRep.base_salary))}>
+    <label for='salary'>OTD %</label><input name="salary" type='number' placeholder={'$'.concat(String($currentRep.base_salary))}><br>
+    <p>DIR %</p>
+    <ul>
+        {#each $currentRep.dir_pcts as mfr}
+            <li>{mfr.mfr_id}: &nbsp; {mfr.pct}%</li>
+        {/each}
+    </ul>
 </section>
 
 <style>
