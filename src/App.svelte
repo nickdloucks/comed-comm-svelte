@@ -1,6 +1,6 @@
 <script lang="ts">
 
-  import { repStore } from "./store";
+  import { currentRep } from "./stores/rep-store";
   import RepSelect from './components/rep-select.svelte';
   import RepConfig from './components/rep-configUI.svelte';
   let edit: boolean = false;
@@ -18,7 +18,7 @@
 <main>
 	<svelte:component this={RepSelect}/>
 	<svelte:component this={RepConfig}/>
-
+Name of current rep in Rep Store: {$currentRep.rep_name} 
   <!-- {#if edit}
     <label for="name">Name:</label>
     <input id="name" type="text" bind:value={$repStore.name} /><br />
