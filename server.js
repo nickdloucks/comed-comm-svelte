@@ -14,6 +14,7 @@ const server = express();
 const port = process.env.PORT || 3002;
 
 server.use(express.static('public'));
+server.use(express.static('fs_db'));
 server.get('*', (req, res)=>{
     console.log(__dirname);
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
