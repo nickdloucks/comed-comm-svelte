@@ -90,7 +90,7 @@ a:visited{
 .good-button:hover{
     border-style: solid #000000 2px;
     color: #ffffff;
-    padding: 0.75em;
+    /* padding: 0.75em; */
     font-style: italic;
 }
 .good-button:active{
@@ -108,7 +108,7 @@ a:visited{
 .bad-button:hover{
     border-style: solid #000000 2px;
     color: #ffffff;
-    padding: 0.75em;
+    /* padding: 0.75em; */
     font-style: italic;
 }
 .bad-button:active{
@@ -126,7 +126,7 @@ a:visited{
 .neutral-button:hover{
     border-style: solid #000000 2px;
     color: #ffffff;
-    padding: 0.75em;
+    /* padding: 0.75em; */
     font-style: italic;
 }
 .neutral-button:active{
