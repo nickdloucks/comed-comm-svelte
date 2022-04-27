@@ -15,6 +15,9 @@
   ],
   "private": true,
   "scripts": {
+    "deploy": "gh-pages -d dist",
+    "test": "jasmine",
+    "stest": "npm run test --silent",
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
