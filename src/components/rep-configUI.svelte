@@ -6,6 +6,11 @@
         $currentRep.territories
         console.log(`territories updated to ${$currentRep.territories}`);
     }
+
+    const saveRep = function(): void{
+        // TODO: update the rep's configs in salesrReps.json, using the values from repStore
+        // these will reflect any changes made by the admin user
+    }
 </script>
 
 <section>
@@ -22,6 +27,7 @@
             <li>{mfr.mfr_id}: &nbsp; {mfr.pct}%</li>
         {/each}
     </ul>
+    <button class="good-button" on:click={saveRep}>Save Changes</button>
 </section>
 
 <style>
