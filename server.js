@@ -13,9 +13,14 @@ dotenv.config();
 const server = express();
 const port = process.env.PORT || 3002;
 
+server.use(express.static('fs_db/statements/'));
 server.use(express.static('public'));
-server.use(express.static('fs_db'));
-server.get('*', (req, res)=>{
+
+// server.get('/fs_db_landing.html', (req, res)=>{
+//     res.sendFile(path.resolve(__dirname, 'fs_db', 'statements', 'fs_db_landing.html'));
+// })
+
+server.get('/index.html', (req, res)=>{
     console.log(__dirname);
     res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 })
