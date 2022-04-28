@@ -14,8 +14,11 @@
     		{ make: 'Porsche', model: 'Boxster', price: 72000 }
     	]
     };
-    let eGridDiv = document.querySelector('#myGrid');
-    new Grid(eGridDiv as HTMLElement, gridOptions);
+    let eGridDiv = document.querySelector('#myGrid') as HTMLElement;
+    if(eGridDiv){
+        new Grid(eGridDiv, gridOptions);
+    }
+    
 </script>
 
 <main>
