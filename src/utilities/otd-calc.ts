@@ -7,7 +7,24 @@
  * @returns : number; Total commissions $ to be paid to the rep for the given list of "out-the-door" sales tracings.
  */
 
-export const OTD_CALC = function(profits: Array<number>, profit_pcts: Array<number>, prod_group_ids: Array<string>): number{
-    let tot_OTD_com = 0; // total commissions on "OTDect" sales
+
+
+// let current_OTD: Array<OTD_tracing> = [
+//     {end_user:'', zip_code:'', gross_profit:0, product_group_id:'', sales_rep:'', item_id:'', month_of_sale:1}
+// ];
+
+export const OTD_CALC = function(selected_rep: SalesRep, otd_sales_list: Array<OTD_tracing>): number{
+    let tot_OTD_com: number = 0; // total commissions on "OTDect" sales
+    let salesList = otd_sales_list;
+    
+    // MAIN ALGORITHM:
+    salesList.forEach((sale: OTD_tracing): void => {
+        sale.ext_com_cost = sale.commission_cost * sale.qty_shipped; // Extended Commission Cost = Commission Cost x Quantity Shipped
+        sale.gross_profit = sale.ext_price - sale.ext_com_cost; // Gross Profit (in dollar$) = Extended Price - Extended Commission Cost
+        sale.gp_pct = sale.ext_com_cost / sale.ext_price; // GP % = Extended Commission Cost / Extended Price
+
+
+    });
+
     return tot_OTD_com;
 }
