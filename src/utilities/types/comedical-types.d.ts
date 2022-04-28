@@ -55,11 +55,13 @@ declare interface Sales_tracing{
     end_user: string; // name of customer
     zip_code: number | string; // used to determine which sales territory owns the sale
     gross_profit: number; // reps get a certain percent of this dollar value as commission
+    gp_pct: number; // Gross Profit as a percentage of the Price
     product_group_id: string; // abbreviation for the manufacturer that produces the product for a given instance of a sale sale
     sales_rep: string;
     item_id: string;
     month_of_sale: Sale_period;
-
+    year_of_sale: number;
+    qty_shipped: number;
 }
 
 declare interface DIR_tracing extends Sales_tracing{
@@ -68,6 +70,7 @@ declare interface DIR_tracing extends Sales_tracing{
 
 declare interface OTD_tracing extends Sales_tracing{
     sales_rep_id: number | string; // used to compare agains the rep's list of territiries. Could theoretically help catch errors in asssignment of sales to reps
+    commission_cost: number;
     ext_com_cost: number; // cost to bring the product into CoMedical's warehouse: used to calc Gross Profit
     ext_price: number; // Price paid by customer: used to cal GP $
     ship_to_id: number | string; // unique identifier in P21 used to index customer locations
