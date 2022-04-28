@@ -3,7 +3,7 @@ import { IIT_pcts, SAT_pcts } from './manufacturers-store';
 
 export const currentRep = writable<SalesRep>({
   rep_name: 'House Account',
-  territories: ['1020', '1021'],
+  territories: [],
   sales_team: ['IIT', 'SAT'],
   otd_pct: 1.00,
   dir_pcts: [...IIT_pcts, ...SAT_pcts],

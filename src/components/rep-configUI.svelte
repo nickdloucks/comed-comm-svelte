@@ -18,7 +18,7 @@
     <h4>{$currentRep.rep_name}</h4>
     <p>Territories:</p>
     {#each $currentRep.territories as territory}
-        <input class='territory-config' type="text" placeholder={territory} value={territory}/><br>
+        <!-- <input class='territory-config' type="text" placeholder={territory} value={territory}/><br> -->
     {/each}
     <label for='salary'>Base Salary: &nbsp;</label><input name="salary" type='number' placeholder={'$'.concat(String($currentRep.base_salary))}><br>
     <p>DIR %</p>
@@ -31,10 +31,10 @@
 </section>
 
 <style>
-    .territory-config{
+    /* .territory-config{
         width: fit-content;
         color: #8b0000;
-    }
+    } */
     ul{
         list-style-type: none;
     }
