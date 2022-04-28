@@ -1,4 +1,18 @@
-enum Territories {1002, 1003, 1004, 1005, 1007, 1008, 1009, 1010, 1012, 1013, 1014, 1015, 1021}
+enum Territories {
+  '1002' = 2, 
+  '1003' = 3, 
+  '1004' = 4, 
+  '1005' = 5, 
+  '1007' = 7, 
+  '1008' = 8, 
+  '1009' = 9, 
+  '1010' = 10, 
+  '1012' = 12, 
+  '1013' = 13, 
+  '1014' = 14, 
+  '1015' = 15, 
+  '1021' = 21
+}
 
 declare interface MFR_pct { // maps a manufacturer abbreviation (aka product group id) to a percentage
     mfr_id: string;
@@ -14,7 +28,7 @@ declare interface variableOTD { // sales reps can have varrying commission perce
 
 declare interface SalesRep { // configurable properties of a CoMedical Sales Representative
   rep_name: string;
-  territories: Array<number | string>;
+  territories: Array<Territories>;
   sales_team: string[];
   otd_pct: variableOTD | number;
   dir_pcts: Array<MFR_pct>;
@@ -22,7 +36,20 @@ declare interface SalesRep { // configurable properties of a CoMedical Sales Rep
   monthly_draw: number;
 };
 
-enum Sale_period {1,2,3,4,5,6,7,8,9,10,11,12}; // a sale period refers to a month of the year so the number much be from 1-12
+enum Sale_period {
+  'January' = 1,
+  'February' = 2,
+  'March' = 3,
+  'April' = 4,
+  'May' = 5,
+  'June' = 6,
+  'July' = 7,
+  'August' = 8,
+  'September' = 9, 
+  'October' = 10,
+  'November' = 11,
+  'December' = 12
+}; // a sale period refers to a month of the year so the number much be from 1-12
 
 declare interface Sales_tracing{
     end_user: string; // name of customer
