@@ -1,28 +1,16 @@
 <script lang="ts">
-    import { Grid } from 'ag-grid-community';
-    import 'ag-grid-community/dist/styles/ag-grid.css';
-    import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
-    let gridOptions = {
-    	columnDefs: [
-    		{ headerName: 'Make', field: 'make' },
-    		{ headerName: 'Model', field: 'model' },
-    		{ headerName: 'Price', field: 'price' }
-    	],
-    	rowData: [
-    		{ make: 'Toyota', model: 'Celica', price: 35000 },
-    		{ make: 'Ford', model: 'Mondeo', price: 32000 },
-    		{ make: 'Porsche', model: 'Boxster', price: 72000 }
-    	]
-    };
-    let eGridDiv = document.querySelector('#myGrid') as HTMLElement;
-    if(eGridDiv){
-        new Grid(eGridDiv, gridOptions);
-    }
-    
+
 </script>
 
 <main>
-    <!-- AG-Grid Placeholder: -->
-    <div id="myGrid" style="height: 150px; width: 600px" class="ag-theme-alpine"></div>
-    <!-- RENDERS THE DIV TO HTML PAGE, BUT SPREADSHEET NOT DISPLAYED, TRY FINDING CSS CONFLICTS OR SOMETHING IN STYLING PREVENTING IT FROM BEING DISPLAYED -->
+    <h1> IFRAME OF THE SPREADSHEET TOOL:</h1>
+    <iframe title="Spreadsheet Tool" src="views/spreadsheet-tool/spreadsheet.html" ></iframe> <!--WHEN RENDERED, THE RELATIVE PATH IS ALREAD IN THE PUBLIC DIRECTORY-->
+    
 </main>
+
+<style>
+    iframe{
+        width: 100%;
+        height: 600px;
+    }
+</style>
