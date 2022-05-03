@@ -4,7 +4,6 @@
 </script>
 
 <main>
-    <strong>Currently Editing:</strong><p>{$currentRep.rep_name}</p>
     <label for="sales-rep">Sales Rep.&nbsp;</label>
     <select class="select-box" name="sales-rep" id="rep-select">
         <option value="chris-burbiglia">Chris Burbiglia</option>
