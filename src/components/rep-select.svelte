@@ -1,6 +1,5 @@
 <script lang='ts'>
     import { currentRep } from '../stores/rep-store';
-  
 </script>
 
 <main>
