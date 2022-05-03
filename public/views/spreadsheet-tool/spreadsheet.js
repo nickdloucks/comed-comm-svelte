@@ -1,4 +1,4 @@
-var columnDefs = [
+let columnDefs = [
     // {headerName: 'Make', field: 'make'},
     // {headerName: 'Model', field: 'model'},
     // {headerName: 'Price', field: 'price'},
@@ -34,7 +34,7 @@ const gridOptions = {
     defaultColDef: {
         sortable: true,
         filter: true,
-        resizeable: true,
+        resizable: true,
         minWidth: 80,
         flex: 1
     },
