@@ -2,6 +2,8 @@
   import { currentRep } from "./stores/rep-store";
   import RepSelect from './components/rep-select.svelte';
   import RepConfig from './components/rep-configUI.svelte';
+  import ExcelIn from './components/grid.svelte';
+  let edit: boolean = false;
 
   let edit: boolean = false;
 
@@ -19,6 +21,7 @@
 
 	<svelte:component this={RepSelect}/>
 	<svelte:component this={RepConfig}/>
+	<svelte:component this={ExcelIn}/>
 	Name of current rep in Rep Store: {$currentRep.rep_name} 
 
   <!-- {#if edit}
