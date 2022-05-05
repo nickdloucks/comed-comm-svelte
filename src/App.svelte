@@ -3,7 +3,6 @@
   import RepSelect from './components/rep-select.svelte';
   import RepConfig from './components/rep-configUI.svelte';
   import ExcelIn from './components/grid.svelte';
-  let edit: boolean = false;
 
   let edit: boolean = false;
 
