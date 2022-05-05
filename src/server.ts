@@ -4,6 +4,7 @@ import express from 'express';
 import path from 'path';
 import {dirname}  from 'path';
 import { fileURLToPath } from 'url';
+// import { default as upload } from './src/routes/upload';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -26,6 +27,8 @@ server.get('/index.html', (req, res)=>{
 })
 
 console.log(__dirname);
+
+// server.use(upload);
 
 server.listen(port, ()=>{
     console.log(`CoMedical Commissions app is listening for requests at http://localhost:${port}.`)
