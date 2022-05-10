@@ -36,6 +36,11 @@ declare interface SalesRep { // configurable properties of a CoMedical Sales Rep
   monthly_draw: number;
 };
 
+declare enum TRACINGS_TYPE{
+  OTD = 'Out-the-Door',
+  DIR = 'Direct'
+}
+
 enum Sale_period {
   'January' = 1,
   'February' = 2,
