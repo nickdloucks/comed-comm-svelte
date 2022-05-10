@@ -3,9 +3,11 @@
 }
 
 .comedical-logo-header {
+    display: block;
     height: 200px;
     width: 450px;
 }
+
 html {
     color: #000000;
     background-color: var(--nick-lt-blue);
@@ -13,4 +15,9 @@ html {
 
 select {
     width: 200px;
+}
+
+.nav-link{
+    display: block; 
+    width: 390px;
 }

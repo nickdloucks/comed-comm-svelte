@@ -6,11 +6,10 @@
 
 	<title>Comedical Commissions</title>
 
-	
+	<link rel="icon" type="image/jpg" href="./views/images/comedical-icon.jpg">
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
-
-	<link rel="icon" type="image/jpg" href="./views/images/comedical-icon.jpg">
+	
     <link rel="stylesheet" href="./views/libs/style/nick-style-lib.css">
     <link rel="stylesheet" href="./views/libs/style/nick-dark-mode.css">
     <link rel="stylesheet" href="./views/libs/style/comedical.css">
@@ -20,22 +19,11 @@
 
 <body>
 	<img src="/views/images/comedical-logo-new.jpg" class="comedical-logo-header">
-    <!-- <a href="./views/admin-login.html">Administrator Panel</a> -->
-    <a class="neutral-button" style="display: block; width: 400px" href="./views/admin-dash.html">Administrator Panel</a>
-    <!-- *************** move inline styling to css when you refactor the link  -->
+    <a class="neutral-button nav-link" href="./views/admin-dash.html">Administrator Panel</a>
+
     <header><h1>CoMedical Commissions Statement Generator</h1></header><!-- *************** move inline styling to css when you refactor the link  -->
     <main>
-        <form class="grid-container" style="margin:30px">
-            <h3>Please upload Sales Tracings for specified sales rep:</h3>
-            <span id="rep-select-component">
-
-            </span>
-
-            <!-- <input type="checkbox" name="dark-mode" id="dark-mode" value="true" checked="true"><label for="dark-mode">Dark Mode</label> -->
-        </form>
-        <a class="good-button" style="margin:40px" href="../fs_db/statements/region-20_2022-04.html">Generate Statement</a>
-            <!-- *************** move inline styling to css when you refactor the link  -->
-            <!-- <div id="statement-output"></div> -->
+        <a class="good-button" href="../fs_db/statements/region-20_2022-04.html">Generate Statement</a>
 
     </main>
 </body>

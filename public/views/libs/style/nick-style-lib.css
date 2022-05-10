@@ -21,6 +21,7 @@
 /* ROOT */
 html {
     font-size: 24px; /* default font size for root of document */
+    background-image: linear-gradient(245deg, var(--nick-lt-blue), var(--nick-dull-silver));
 }
 
 /* TEXT ELEMENTS */
