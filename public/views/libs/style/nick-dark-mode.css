@@ -25,7 +25,6 @@ a:hover{
 .neutral-button:hover{
     border-style: solid #000000 2px;
     color: #ffffff;
-    padding: 1.5rem;
     font-style: italic;
 }
 .neutral-button:active{
