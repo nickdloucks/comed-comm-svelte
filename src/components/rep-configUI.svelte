@@ -24,9 +24,9 @@
 
     <label for='salary'>Base Salary: &nbsp;</label><input name="salary" type='number' placeholder={'$'.concat(String($currentRep.base_salary))}><br>
     <h5>Direct Sales Commissions % by Manufacturer:</h5>
-    <ul>
+    <ul class="mfr-list">
         {#each $currentRep.dir_pcts as mfr}
-            <li class="MFR-list"><label for={mfr.mfr_id.concat('-list-item')}>{mfr.mfr_id}:</label> &nbsp; 
+            <li class="mfr-list-item"><label class="mfr-label" for={mfr.mfr_id.concat('-list-item')}>{mfr.mfr_id}:</label> &nbsp; 
                 <input name={mfr.mfr_id.concat('-list-item')} type="number" placeholder={String(mfr.pct)}> &nbsp; %</li>
         {/each}
     </ul>
@@ -34,15 +34,19 @@
 </section>
 
 <style>
-    /*.MFR-list{
-        font-weight: bold;
-    }
-    .territory-config{
-        width: fit-content;
-        color: #8b0000;
-    } */
-    ul{
+    .mfr-list{
         list-style-type: none;
+        
     }
+    .mfr-label{
+        display: inline-block;
+        width: 10px;
+        height: min-content;
+    }
+    .mfr-list-item{
+        margin: 0%;
+        padding: 0%;
+    }
+
 </style>
 

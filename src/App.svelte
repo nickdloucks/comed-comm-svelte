@@ -13,6 +13,7 @@
 	<svelte:component this={ExcelDisplay}/>
 	Name of current rep in Rep Store: {$currentRep.rep_name} 
 
+	<a class="good-button generate-button" href="../fs_db/statements/region-20_2022-04.html">Generate Statement</a>
 </main>
 
 <style>
@@ -21,6 +22,10 @@
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	.generate-button{
+		display: inline-block;
 	}
 
 	@media (min-width: 640px) {
