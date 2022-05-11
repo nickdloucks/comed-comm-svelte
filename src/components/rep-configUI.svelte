@@ -47,10 +47,11 @@
 <style>
 
     section{
-        background-image: linear-gradient(245deg, var(--nick-lt-blue), var(--nick-dull-silver));
+        background-image: linear-gradient(45deg, var(--nick-lt-blue), var(--nick-dull-silver));
     }
     .mfr-list{
-        background-image: linear-gradient(245deg, var(--nick-lt-blue), var(--nick-dull-silver));
+        width: min-content;
+        height: min-content;
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -62,7 +63,7 @@
     }
     .mfr-label{
         height: min-content;
-        width: 35px;
+        width: 40px;
         display: inline-block;
         
     }    
