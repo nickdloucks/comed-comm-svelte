@@ -3,8 +3,7 @@
 </script>
 
 <main>
-    <h1> IFRAME OF THE SPREADSHEET TOOL:</h1>
-    <iframe title="Spreadsheet Tool" src="views/spreadsheet-tool/spreadsheet.html" ></iframe> <!--WHEN RENDERED, THE RELATIVE PATH IS ALREAD IN THE PUBLIC DIRECTORY-->
+    <iframe title="Spreadsheet Tool" src="./views/spreadsheet-tool/spreadsheet.html" ></iframe> <!--WHEN RENDERED, THE RELATIVE PATH IS ALREAD IN THE PUBLIC DIRECTORY-->
     
 </main>
 

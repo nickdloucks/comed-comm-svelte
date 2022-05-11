@@ -21,7 +21,10 @@
 /* ROOT */
 html {
     font-size: 24px; /* default font size for root of document */
+}
+body{
     background-image: linear-gradient(245deg, var(--nick-lt-blue), var(--nick-dull-silver));
+    height: min-content;
 }
 
 /* TEXT ELEMENTS */
@@ -31,12 +34,13 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1em;
 }
 
-p, pre, section, div, li {
-    font-family: Arial, Helvetica, sans-serif;
+p, pre, section, div, li, strong {
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 0.8em;
     padding: 0.8em;
     box-sizing: border-box;
     margin: 0.8em;
+    font-family: Lucida Bright, Georgia, serif;
 }
 
 label {
