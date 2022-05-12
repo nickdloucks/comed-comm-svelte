@@ -1,6 +1,7 @@
 <script lang="ts">
     import { currentRep } from '../stores/rep-store';
     import RepSelect from './rep-select.svelte';
+    import MfrPctInput from './mfr-pct-input.svelte';
     
     const update_territories = function(val: unknown): void{
         $currentRep.territories
@@ -12,7 +13,12 @@
         // these will reflect any changes made by the admin user
     }
 
-    // TODO: Make current reop a property of the ui config component so that it re-renders with just that rep's data/ mfr list????
+
+
+    // let mfr_input_id: string;
+    // const getInputNode = function(id: string): HTMLElement | null{
+    //     return document.getElementById(id);
+    // }
 </script>
 
 <main>
@@ -33,10 +39,12 @@
     </section><br>
     <section>
         <ul class="mfr-list">
-            {#each $currentRep.dir_pcts as mfr}
+            {#each Object.keys($currentRep.dir_pcts) as mfr}
                 <li class="mfr-list-item">
-                    <label class="mfr-label" for={mfr.mfr_id.concat('-list-item')}>{mfr.mfr_id.concat(': ')}</label> 
-                    <input name={mfr.mfr_id.concat('-list-item')} type="number" placeholder={String(mfr.pct)}> &nbsp; %
+                    <label class="mfr-label" for={mfr.concat('-list-item')}>{mfr.concat(': ')}</label> 
+                    <svelte:component 
+                        this={MfrPctInput}
+                        name={mfr.concat('-input')}></svelte:component>&nbsp; %
                 </li>
             {/each}
         </ul>
