@@ -23,7 +23,7 @@ enum Territories {
 // }
 
 
-class SAT_pcts{
+declare class SAT_pcts{
   [key: string]: number;
   constructor(sat_mfrs: string[]){
     for (let i = 0; i < sat_mfrs.length; i++){ // For each manufacturer in the list:
@@ -32,7 +32,7 @@ class SAT_pcts{
   }
 }
 
-class IIT_pcts{
+declare class IIT_pcts{
   [key: string]: number;
   constructor(iit_mfrs: string[]){
     for (let i = 0; i < iit_mfrs.length; i++){ // For each manufacturer in the list:
@@ -41,7 +41,7 @@ class IIT_pcts{
   }
 }
 
-class All_pcts{
+declare class All_pcts{
   [key: string]: number;
   constructor([...iit_mfrs, ...sat_mfrs]: string[]){ // Combine both lists of MFRs into one array
     for (let i = 0; i < arguments[0].length; i++){ // For each manufacturer in the list:
