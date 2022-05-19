@@ -1,5 +1,6 @@
 <script lang="ts">
     import {promises as fsPromises} from 'fs';
+    import type {TRACINGS_TYPE} from '../utilities/types/comedical-types'
     export let salesType: TRACINGS_TYPE;
 
 </script>

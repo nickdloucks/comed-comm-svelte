@@ -1,9 +1,9 @@
 <script lang="ts">
     import {currentRep} from '../stores/rep-store';
-    import { SAT_instance, IIT_instance, All_mfr_instance} from '../stores/manufacturers-store';
+    // import { SAT_instance, IIT_instance, All_mfr_instance} from '../stores/manufacturers-store';
     import type { All_pcts, IIT_pcts, SAT_pcts } from 'comedical-types';
 
-    export let assignedTeam: SAT_pcts | IIT_pcts | All_pcts = $currentRep.dir_pcts; //REMOVE $ SO IT'S NOT REACTIVE? ONLY INITIALIZED??
+    let assignedTeam: SAT_pcts | IIT_pcts | All_pcts = $currentRep.dir_pcts; //REMOVE $ SO IT'S NOT REACTIVE? ONLY INITIALIZED??
     // The instance of sales team class which is selected will be written to the currentRep's dir_pcts property
 </script>
 
